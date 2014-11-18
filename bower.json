@@ -1,0 +1,27 @@
+{
+  "name": "HowHigh Website",
+  "version": "0.0.5",
+  "authors": [
+    "Raman Choudhary <raman.choudhary65@gmail.com>"
+  ],
+  "description": "This is the Official website of HowHigh Game by Codians Inc.",
+  "main": "index.html",
+  "keywords": [
+    "Howhigh",
+    "codians",
+    "game"
+  ],
+  "license": "MIT",
+  "homepage": "www.codians.com/howhigh",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "animate.css": "~3.2.0"
+  }
+}

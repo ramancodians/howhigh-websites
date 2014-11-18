@@ -1,0 +1,256 @@
+/*
+
+Coded by : Raman Choudhary
+#PEACE!
+
+*/
+
+
+body{
+        margin: 0px;
+        overflow-x: hidden;
+    background: #ebebeb;
+        }        
+        
+        /* Chrome, Safari, Opera */ 
+        @-webkit-keyframes shine {
+            0%   {width: 45px; height: 45px;}
+            50%   {width: 40px; height: 40px;}
+            100%   {width: 45px; height: 45px;}
+           
+        }
+
+        /* Standard syntax */
+        @keyframes shine {
+            0%   {width: 45px; height: 45px;}
+            50%   {width: 40px; height: 40px;}
+            100%   {width: 45px; height: 45px;}
+        }
+
+/*        Cloud animation*/
+
+/* Chrome, Safari, Opera */ 
+        @-webkit-keyframes cloud {
+            0%   {left: -5%;}          
+            100%   {left: 105%;}
+           
+        }
+
+        /* Standard syntax */
+        @keyframes cloud {
+             0%   {left: -5%;}          
+            100%   {left: 105%;}
+        }
+
+        .cloud-1{ 
+            position : absolute;
+            top:20px;
+            left:-200px;
+            background: url(img/cloud-1.png);
+            background-size: cover; 
+            -webkit-background-size: cover; 
+            -ms-background-size: cover; 
+            -o-background-size: cover; 
+            z-index: -4;
+            width: 300px;
+            height: 170px;   
+                -webkit-animation: cloud 50s infinite; /* Chrome, Safari, Opera */ 
+            animation: cloud 50s infinite;
+              -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+    animation-timing-function: linear;
+            
+        }
+        .cloud-2{ 
+            position : absolute;
+            top:20px;
+            right:200px;
+            background: url(img/cloud-2.png);
+            background-size: cover; 
+            -webkit-background-size: cover; 
+            -ms-background-size: cover; 
+            -o-background-size: cover; 
+            z-index: 4;
+            width: 300px;
+            height: 170px;   
+        }
+        .cloud-3{ 
+           position : absolute;
+            top:200px;
+            left:350px;
+            background: url(img/cloud-3.png);
+            background-size: cover; 
+            -webkit-background-size: cover; 
+            -ms-background-size: cover; 
+            -o-background-size: cover; 
+            z-index: 4;
+            width: 300px;
+            height: 170px;
+        }
+        
+        .section{
+            width: 100%;                   
+            position: relative;
+            text-align: center;           
+        }
+        
+        .game img{            
+           position: relative;
+            bottom: -30px;
+            
+        }
+        
+        #path-1{
+            max-width: 400px;
+            height: 60000px;
+            background: url(img/path.PNG);
+            background-position: center;    
+            background-repeat: repeat-y;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            top: 0px;
+        }
+        
+        .game{
+            position: absolute;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            overflow:hidden;
+            z-index: 0;
+/*            background: rgba(255, 6, 6, 0.55);*/
+           
+        }
+        
+        .main{
+            z-index: 1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            padding-top: 200px;
+        }
+        
+        #google-download{
+            width: auto;
+            height: 70px;
+            z-index: 2;
+            margin-top: 60px;           
+        }
+
+        #google-download:hover{
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+          
+            -webkit-box-shadow: 0px 10px 51px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 10px 51px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 10px 51px 0px rgba(0,0,0,0.75);
+        }
+        
+        #game-logo{           
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;            
+        }
+        
+        .star{
+            position : absolute;          
+            background: url(img/star.png);
+            background-size: cover; 
+            -webkit-background-size: cover; 
+            -ms-background-size: cover; 
+            -o-background-size: cover; 
+            z-index: 0;
+            width: 40px;
+            height: 40px;
+            z-index: -5;
+             -webkit-animation: shine 2s infinite; /* Chrome, Safari, Opera */ 
+            animation: shine 2s infinite;
+              -webkit-animation-timing-function: ease; /* Chrome, Safari, Opera */
+            animation-timing-function: ease;
+        }
+        
+        
+        .s1{  background: rgb(16, 16, 16);
+        height: 700px;
+        }
+.s2 {
+    padding-top: 130px;   
+    height: auto;    
+    margin-bottom: 100px;
+   
+}
+
+.s2-bg{
+  background: url(img/bg-footer.png) center center;;
+    background-size: cover; 
+            -webkit-background-size: cover; 
+            -ms-background-size: cover; 
+            -o-background-size: cover; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+footer{
+    padding-top: 100px;
+    background: #e5e5e5;
+}
+
+.s2 h1{
+font-family: 'Pacifico', cursive;
+}
+
+.s2-text{
+padding-top: 60px;
+}
+
+footer {
+  padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.f-text {
+    font-weight: bold;
+    color: #999;
+    font-size: 13px;
+}
+
+.light {
+    opacity: 0.5;
+}
+
+.light:hover{
+     opacity: 0.9;
+    transition-duration: 0.5s;
+}
+
+.codians-logo{
+    width: 200px;
+    height: auto;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { ... }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    #game-logo{
+    width: 200px;    
+    }
+    
+   
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the Official website of HowHigh Game by Codians Inc." />
+    <meta name="keywords" content="HowHigh,How high,codians, codians inc, android,mobile games,casual games" />
+    
+<!--    Links-->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>    
+    <link href="style.css" rel="stylesheet" />   
+</head>
+<body>
+    <div class="section s1">
+         <div class="main">            
+             <div class="conrainer">
+                <div class="row">
+                     <img src="img/logo.png" id="game-logo" class="img-responsive" />
+                 </div>
+                 <div class="row">
+                     <a href="#">
+                     <img src="img/google-download.png" id="google-download" />
+                         </a>
+                 </div>
+             </div>
+        </div>
+            <div class="game">                  
+<!--                Stars-->
+                <div class="star" style="top:3%; left :10%;"></div>
+                <div class="star" style="top:7%  ; left : 69% ;"></div>
+                <div class="star" style="top:20% ; left : 56%;"></div>
+                <div class="star" style="top: 26%; left : 95% ;"></div>
+                <div class="star" style="top: 37%; left : 8%;"></div>
+                <div class="star" style="top: 48%; left : 46%;"></div>
+                <div class="star" style="top: 57% ; left : 25%;"></div>
+                <div class="star" style="top: 69% ; left : 88%;"></div>
+                <div class="star" style="top: 80%; left : 60% ;"></div>
+                <div class="star" style="top: 17%; left : 41%;"></div>
+                <div class="star" style="top: 14% ; left : 24% ;"></div>
+<!--                Path-->
+                <div id="path-1"></div>
+<!--                Clouds-->               
+                 <div class="cloud-1"></div>
+                 <div class="cloud-2"></div>
+                 <div class="cloud-3"></div>
+                </div>
+            </div>
+    
+    <div class="section">
+        <div class="s2-bg"></div>        
+            <div class="container s2">
+                <div class="row">
+                    <h1>How High you can get?</h1>
+                </div>
+                
+                <div class="row s2-text">
+                    <div class="col-md-4">
+                    <img src="img/4.jpg" class="img-responsive scl"  />
+                   
+                        <h4>
+                         Loading
+                        </h4>
+                        
+                        <p>
+                                asd as d sa sad sa sa d sad sa sa     
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-md-4">
+                    
+                        <img src="img/3.png" class="img-responsive scl" />
+                        <h4>
+                        Loading Screen
+                        </h4>
+                        
+                    </div>
+                    
+                    <div class="col-md-4">                    
+                        <img src="img/3.png" class="img-responsive scl" />
+                        <h4>
+                        Loading Screen
+                        </h4>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>    
+    </div>
+    
+    <footer>
+        <div>
+            <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                <p class="f-text">Built with</p>
+                <img src="img/unity.png" class="img-responsive light" />
+                   
+                </div>
+                
+                <div class="col-md-3">
+                <p class="f-text">Built By</p>
+                    <img src="img/codians-logo.png" class="img-responsive light codians-logo" />                    
+                </div>
+                
+                <div class="col-md-6">
+                <p class="f-text">Built By</p>
+                    asdsadasdasdaas sa das dasd sa dsa d sad sad as d sadsa s sdf sdf ds fds
+                      asdsadasdasdaas sa das dasd sa dsa d sad sad as d sadsa s sdf sdf ds fds
+                      asdsadasdasdaas sa das dasd sa dsa d sad sad as d sadsa s sdf sdf ds fds
+                      asdsadasdasdaas sa das dasd sa dsa d sad sad as d sadsa s sdf sdf ds fds
+                    
+                      asdsadasdasdaas sa das dasd sa dsa d sad sad as d sadsa s sdf sdf ds fds
+                      asdsadasdasdaas sa das dasd sa dsa d sad sad as d sadsa s sdf sdf ds fds
+                      asdsadasdasdaas sa das dasd sa dsa d sad sad as d sadsa s sdf sdf ds fds
+                      asdsadasdasdaas sa das dasd sa dsa d sad sad as d sadsa s sdf sdf ds fds
+                </div>
+                
+              
+            </div>
+        </div>
+        
+
+        </div>           
+    </footer>
+<!--    Scripts(This is where I do magic)!-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script>
+//            Coded by : Raman Choudhary
+            var speed = 400000/2;
+            $(document).ready(function(){
+                $('#path-1').animate({
+                    top: "-60000"
+                },speed,'linear',function(){
+                $(".game").append('<div id="path-1"></div>');
+                    rs();
+                });//end of animate                
+            });//end of Jquery Load
+            
+            // 90000
+              function rs(){
+                  console.log("RS Called!");
+                  $('#path-1').animate({
+                    top: "-60000"
+                },speed,'linear',function(){
+                     $('#path-1').remove();
+                $('.game').append('<div id="path-1"></div>');
+                    rs();
+                });//end of animate  
+               }
+        </script>
+
+</body>
+</html>
